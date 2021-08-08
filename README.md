@@ -1,6 +1,14 @@
-# svelte-simple-i18n
+# :globe_with_meridians: svelte-simple-i18n
 
-Simple and light internationalization for svelte
+Light internationalization support for svelte.
+
+![npm](https://img.shields.io/npm/v/svelte-simple-i18n?color=%23f&style=flat-square)
+
+## :book: Documentation
+
+- [Try a demo](https://codesandbox.io/s/demo-svelte-simple-i18n-hcshi?file=/Button.svelte) on CodeSandbox.
+
+- [API Reference](https://dsfx3d.github.io/svelte-simple-i18n/index.html) on github pages.
 
 ## Install
 
@@ -57,19 +65,27 @@ export const { t, locale } = createI18n({
 
 3. Use in you components.
 
-```javascript
+```html
 <script>
-  import { t, locale } from './i18n'
+  import { t, locale } from './i18n';
+  import { esMX } from './lang';
+
+  function changeLocale() {
+    $locale = esMX;
+  }
 </script>
 
 <div>
-  {$locale} <!--= hi-IN -->
+  {$locale}
+  <!--= hi-IN -->
 
-  {$t('foo.baz')} <!--= हिंदी में अनुवाद -->
+  {$t('foo.baz')}
+  <!--= हिंदी में अनुवाद -->
 
   <!-- fallback -->
-  {$t('onlyHere')} <!--= only exists in english -->
+  {$t('onlyHere')}
+  <!--= only exists in english -->
+
+  <button on:click="{changeLocale}">Change Locale</button>
 </div>
 ```
-
-`locale` is a writable store which holds the value of selected locale, update it's value to reactively update the translations.
