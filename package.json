@@ -1,6 +1,6 @@
 {
   "name": "svelte-simple-i18n",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simple and light i18n for svelte",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
