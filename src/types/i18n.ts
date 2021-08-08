@@ -7,6 +7,6 @@ export type Messages = {
 
 export type Options = {
   messages: Messages;
-  locale: Locale;
-  fallbackLocale: Locale;
+  locale?: Locale;
+  fallbackLocale?: Locale;
 };

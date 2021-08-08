@@ -2,8 +2,15 @@ import _get from 'lodash.get';
 import { derived, readable, writable } from 'svelte/store';
 
 import type { Options } from '../types/i18n';
+import { InvalidOptionsError } from './exceptions';
 
 export const createI18n = (options: Options) => {
+  if (!options.messages) {
+    throw new InvalidOptionsError(
+      'Option "messages" is required and must be a valid messages object.'
+    );
+  }
+
   const locale = writable(options.locale);
   const fallbackLocale = readable(options.fallbackLocale);
 
