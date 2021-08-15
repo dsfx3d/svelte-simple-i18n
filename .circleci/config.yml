@@ -64,10 +64,19 @@ workflows:
   version: 2
   test-release:
     jobs:
-      - setup
+      - setup:
+          branches:
+            only:
+              - master
       - test:
           requires:
             - setup
+          branches:
+            only:
+              - master
       - release:
           requires:
             - test
+          branches:
+            only:
+              - master
