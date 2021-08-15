@@ -6,7 +6,7 @@ Light internationalization support for svelte.
 
 ## :book: Documentation
 
-- [Try a demo](https://codesandbox.io/s/demo-svelte-simple-i18n-hcshi?file=/Button.svelte) on CodeSandbox.
+- [Try a demo](https://codesandbox.io/s/demo-svelte-simple-i18n-hcshi?file=/App.svelte) on CodeSandbox.
 
 - [API Reference](https://dsfx3d.github.io/svelte-simple-i18n/index.html) on github pages.
 
