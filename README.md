@@ -2,7 +2,7 @@
 
 Light internationalization support for svelte.
 
-![npm](https://img.shields.io/npm/v/svelte-simple-i18n?color=%23f&style=flat-square)
+[![npm](https://img.shields.io/npm/v/svelte-simple-i18n?color=%23f&style=flat-square)](https://www.npmjs.com/package/svelte-simple-i18n)
 
 ## :book: Documentation
 
