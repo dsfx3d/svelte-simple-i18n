@@ -25,13 +25,13 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
       - persist_to_workspace:
-          root: ~/repo
+          root: ~/rep
           paths: ['.']
   test:
     <<: *defaults
     steps:
       - attach_workspace:
-          at: ~/repo
+          at: ~/rep
       - run:
           name: Run Tests
           command: npm test
@@ -39,18 +39,18 @@ jobs:
           name: Send Coverage Report
           command: npm run cov:send && npm run cov:check
       - persist_to_workspace:
-          root: ~/repo
+          root: ~/rep
           paths: ['.']
 
   release:
     <<: *defaults
     steps:
       - attach_workspace:
-          at: ~/repo
+          at: ~/rep
 
       - run:
           name: Authenticate with registry
-          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/rep/.npmrc
 
       - run:
           name: Prepare Release
