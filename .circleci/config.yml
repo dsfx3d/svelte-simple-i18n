@@ -65,18 +65,23 @@ workflows:
   test-release:
     jobs:
       - setup:
-          branches:
-            only:
-              - master
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              only:
+                - master
       - test:
           requires:
             - setup
-          branches:
-            only:
-              - master
+          filters:
+            branches:
+              only:
+                - master
       - release:
           requires:
             - test
-          branches:
-            only:
-              - master
+          filters:
+            branches:
+              only:
+                - master
