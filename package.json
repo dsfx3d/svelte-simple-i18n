@@ -49,7 +49,7 @@
   },
   "devDependencies": {
     "@ava/typescript": "1.1.1",
-    "@istanbuljs/nyc-config-typescript": "^1.0.1",
+    "@istanbuljs/nyc-config-typescript": "1.0.1",
     "@tsconfig/svelte": "2.0.1",
     "@types/lodash.get": "4.4.6",
     "@typescript-eslint/eslint-plugin": "4.29.0",
