@@ -15,7 +15,7 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-      - run: npm run standard-release
+      - run: npm run prepare-release
       - run: npm test
       - run: npm run cov:send
       - run: npm run cov:check
