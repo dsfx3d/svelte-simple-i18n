@@ -15,9 +15,6 @@ jobs:
             - v1-dependencies-{{ checksum "package.json" }}
             - v1-dependencies-
       - run:
-          name: Setup Git
-          command: git config --global user.name dsfx3d && git config --global user.email dsfx3d@gmail.com
-      - run:
           name: Install Dependencies
           command: npm install
       - save_cache:
@@ -47,6 +44,10 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/rep
+
+      - run:
+          name: Setup Git
+          command: git config --global user.name dsfx3d && git config --global user.email dsfx3d@gmail.com
 
       - run:
           name: Authenticate with registry
