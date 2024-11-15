@@ -1609,6 +1609,26 @@ comment-json@^4.1.1:
     has-own-prop "^2.0.0"
     repeat-string "^1.6.1"
 
+commit-and-tag-version@9.5.0:
+  version "9.5.0"
+  resolved "https://registry.yarnpkg.com/commit-and-tag-version/-/commit-and-tag-version-9.5.0.tgz#34e7f47c6bd6336c1931e2b3e87de382ab84afb3"
+  integrity sha512-XpYAhoa87HfrVY2B9Rle3XbxFNI8eVusMF66H49oom2UNYAU0u5JbLL6x5MuCJw8wfac4KKpoJmUWCYuLHDdUw==
+  dependencies:
+    chalk "^2.4.2"
+    conventional-changelog "3.1.25"
+    conventional-changelog-config-spec "2.1.0"
+    conventional-changelog-conventionalcommits "4.6.3"
+    conventional-recommended-bump "6.1.0"
+    detect-indent "^6.0.0"
+    detect-newline "^3.1.0"
+    dotgitignore "^2.1.0"
+    figures "^3.1.0"
+    find-up "^5.0.0"
+    git-semver-tags "^4.0.0"
+    semver "^7.1.1"
+    stringify-package "^1.0.1"
+    yargs "^16.0.0"
+
 commitizen@^4.0.3:
   version "4.2.4"
   resolved "https://registry.yarnpkg.com/commitizen/-/commitizen-4.2.4.tgz#a3e5b36bd7575f6bf6e7aa19dbbf06b0d8f37165"
