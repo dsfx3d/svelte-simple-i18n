@@ -722,10 +722,10 @@
   resolved "https://registry.yarnpkg.com/@tsconfig/node16/-/node16-1.0.2.tgz#423c77877d0569db20e1fc80885ac4118314010e"
   integrity sha512-eZxlbI8GZscaGS7kkc/trHTT5xgrjH3/1n2JDwusC9iahPKWMRvRjJSAN5mCXviuTGQ/lHnhvv8Q1YTpnfz9gA==
 
-"@tsconfig/svelte@5.0.4":
-  version "5.0.4"
-  resolved "https://registry.yarnpkg.com/@tsconfig/svelte/-/svelte-5.0.4.tgz#8bd0254472bd39a5e750f1b4a05ecb18c9f3bf80"
-  integrity sha512-BV9NplVgLmSi4mwKzD8BD/NQ8erOY/nUE/GpgWe2ckx+wIQF5RyRirn/QsSSCPeulVpc3RA/iJt6DpfTIZps0Q==
+"@tsconfig/svelte@5.0.9":
+  version "5.0.9"
+  resolved "https://registry.yarnpkg.com/@tsconfig/svelte/-/svelte-5.0.9.tgz#8e6bc0482a4a53706280984b4d95cf0468e7f3c9"
+  integrity sha512-gbtbqsEFq9gFzGmgJMIB3+leXVmkUttoFjzeHsbqN6qFKst40fvxnN9+3Ajdl8VlIGwPevs9LNJ8YUhQgchqaw==
 
 "@types/hast@^3.0.0", "@types/hast@^3.0.4":
   version "3.0.4"
